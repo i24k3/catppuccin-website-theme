@@ -1,0 +1,17 @@
+{
+  "name": "catppuccin website theme",
+  "description": "cwt, a general mocha catppuccin theme for nearly all supporting websites",
+  "version": "1.0",
+  "manifest_version": 3,
+"permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_popup": "./popup.html",
+    "default_icon": "./catppuccin-icon.png"
+  },
+  "icons": {
+    "16": "./catppuccin-icon.png",
+    "32": "./catppuccin-icon.png",
+    "48": "./catppuccin-icon.png",
+    "128": "./catppuccin-icon.png"
+  }
+}
