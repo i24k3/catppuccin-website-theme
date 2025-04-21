@@ -13,5 +13,11 @@
     "32": "./catppuccin-icon.png",
     "48": "./catppuccin-icon.png",
     "128": "./catppuccin-icon.png"
-  }
+  },
+   "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["./logic.js"]
+    }
+  ]
 }
