@@ -1,16 +1,6 @@
 'use strict';
 
-const colors = {
-  base: '#1e1e2e',
-  text: '#cdd6f4',
-  subtext: '#a6adc8',
-  headings: '#cba6f7',
-  borders: '#f3bce6',
-  links: '#89b4fa',
-  visited: '#b4befe',
-};
-
-const setColor = (colors) => {
+const setColor = () => {
 
   /*
   document.body.style.backgroundColor = colors.base;
@@ -43,7 +33,6 @@ const setColor = (colors) => {
 }
 
 * {
-background-color: transparent !important;
   color: var(--ctp-text) !important;
 }
 
@@ -110,15 +99,6 @@ table {
   background-color: var(--ctp-surface0) !important;
   color: var(--ctp-text) !important;
 }
-th, td {
-  border: 1px solid var(--ctp-surface2) !important;
-}
-th {
-  background-color: var(--ctp-surface1) !important;
-}
-td {
-  background-color: var(--ctp-surface0) !important;
-}
 
 img {
   border: 1px solid var(--ctp-surface2) !important;
@@ -137,8 +117,8 @@ code, pre {
 
 if (document.readyState === "loading") {
   document.addEventListener("DOMContentLoaded", () => {
-    setColor(colors);
+    setColor();
   });
 } else {
-  setColor(colors);
+  setColor();
 }
